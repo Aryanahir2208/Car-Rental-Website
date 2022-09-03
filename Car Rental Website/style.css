@@ -1,0 +1,180 @@
+/* Google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200;1,400&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    position: relative;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    padding: 0px 10px;
+    float: left;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    background-color: #ff3c78;
+    height: 3px;
+    left: 0;
+    bottom: -3px;
+    transition: 0.7s;
+}
+
+.navbar a:hover:after {
+    width: 100%;
+    font-weight: 500px;
+    color: #ff3c78;
+}
+
+.header-btn .sign-in {
+    background: orange;
+    color: black;
+    border-radius: 0.2rem;
+}
+
+.header-btn .sign-up {
+    background: orange;
+    color: black;
+    border-radius: 0.2rem;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: url(image/Car\ Website.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.text h1 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+
+.text span {
+    color: orange
+}
+
+.app-stores {
+    display: flex;
+}
+
+.app-stores img {
+    width: 100px;
+    margin-right: 1rem;
+
+}
+
+.form-container form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: -3rem;
+    left: 100px;
+    background: white;
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+
+.input-box span {
+    padding: 7px;
+    outline: none;
+    border: none;
+    background: #eeeff1;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.form-container form .btn {
+    flex: 1 1 7rem;
+    padding: 10px 34px;
+    border: none;
+    border-radius: 0.5rem;
+    background: #474fa0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.form-container form .btn:hover {
+    background: black;
+}
+
+.headings {
+    text-align: center;
+}
+
+.headings span {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(255, 172, 17)
+}
+
+.headings h1 {
+    font-size: 2rem;
+}
+
+.ride-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+    color: #fff;
+
+}
+
+.ride-container .box {
+    text-align: center;
+    padding: 20px;
+}
+
+.ride-container .box .box {
+    font-size: 34px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 0.5rem;
+    color: orange;
+}
+
+.ride-container.bx h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 1.4rem 0 0.5rem;
+}
+
+.card-img-top1 {
+    border-radius: 90%;
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid;
+    align-items: center;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.social a {
+    color: gray;
+    font-size: 25px;
+}
+
+sr.reveal()
